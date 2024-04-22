@@ -11,7 +11,9 @@ Docker
 
 Demo : Create a Simple python webapp on Cloudshell
 1  gcloud config set project snappy-benefit-421114
+
 2  python3
+
 3  nano main.py
 
     
@@ -30,6 +32,7 @@ Demo : Create a Simple python webapp on Cloudshell
 
 
  4  ls
+ 
  5  python3 main.py
     
 
