@@ -34,10 +34,52 @@ Demo : Create a Simple python webapp on Cloudshell
  4  ls
  
  5  python3 main.py
-    
 
+ CREATE A DOCKERFILE
+   gcloud config set project snappy-benefit-421114
+   ls
+   docker
+   docker version
+   mkdir devops
+   cd devops/
+   mkdir docker-basics
+   cp main.py devops/docker-basics/
+   cd devops/docker-basics/   
 
-    https://8080-cs-187d79a5-c3ba-47c8-a4e4-0a15b7e9d1d4.cs-us-east1-pkhd.cloudshell.dev/?authuser=0&redirectedPreviously=true
+STEPS
+   BASE IMAGE-linux
+   python
+   install flask
+   start flask web app
 
-    Welcome to Python Flask World v2.0
+   hostport:containerport
+   9090:8080
+
    
+ CODE
+   FROM python: 3.10-slim
+   RUN pip install flask
+   WORKDIR /myapp
+   COPY main.py /myapp/main.py
+   CMD ["python", "/myapp/main.py"]
+
+ COMMANDS
+ 
+ gcloud config set project snappy-benefit-421114
+  
+     cd devops
+     cd docker-basics
+     ls
+     docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+     nano Dockerfile
+     docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+     docker images
+    cd Dockerfile
+    ls
+    docker pull hello-world
+    docker run hello-world
+    docker images
+    docker run -p 9090:8080 gcr.io/gcp-devops-338510/myfimage:v1.0
+     docker ps -a
+     docker rm <containerid>
+     
