@@ -10,30 +10,27 @@ Docker
  Docker works with any language, runtime, OS
 
 Demo : Create a Simple python webapp on Cloudshell
-
-
-     1  gcloud config set project snappy-benefit-421114
-    2  python3
-    3  nano main.py
+1  gcloud config set project snappy-benefit-421114
+2  python3
+3  nano main.py
 
     
-from flask import Flask
+    from flask import Flask
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
 
-@app.route('/')
-def index():
+    @app.route('/')
+    def index():
     return 'Welcome to Python Flask World v2.0'
 
 
-if __name__ == '__main__':
+    if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 
 
-  
-    4  ls
-    5  python3 main.py
+ 4  ls
+ 5  python3 main.py
     
 
 
