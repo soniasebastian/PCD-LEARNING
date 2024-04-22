@@ -10,4 +10,17 @@ Naming convention:
   Hostname/ProjectID/iMAGENAME:tAG-gcr.io/[ProjectID]/NGINX:1.0
 Binary authorization can be used to detect vulnerabilities & enforce deployment policies
 No IAM role defined at granular level
+No region specific Repository
+Pricing store in Google cloud storage (GCS)
+
+
+CREATE FIRST DOCKER IMAGES
+
+Node application
+Simple hellow world will be returned
+
+filename
+-server.js
+-Dockerfile
+
 
