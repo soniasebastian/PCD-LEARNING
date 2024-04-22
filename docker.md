@@ -36,6 +36,14 @@ Demo : Create a Simple python webapp on Cloudshell
  5  python3 main.py
 
  CREATE A DOCKERFILE
+ 
+Python based Web Application
+ main.py
+ Dockerfile
+ Build Docker images
+ Push to Container Registry 
+
+
    gcloud config set project snappy-benefit-421114
    ls
    docker
