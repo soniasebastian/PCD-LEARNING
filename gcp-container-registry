@@ -1,1 +1,13 @@
 GCP CONTAINER REGISTRY
+
+Online storage space for Docker images
+Docker Hub inside Google cloud
+You can store Docker images, pull images & push images, tag images
+GCP recently introduced next level registry
+- Artifact registry
+   It can store not just Docker image but many more thing like NPM, Maven
+Naming convention:
+  Hostname/ProjectID/iMAGENAME:tAG-gcr.io/[ProjectID]/NGINX:1.0
+Binary authorization can be used to detect vulnerabilities & enforce deployment policies
+No IAM role defined at granular level
+
