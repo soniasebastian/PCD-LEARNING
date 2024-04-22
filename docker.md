@@ -81,5 +81,6 @@ STEPS
     docker images
     docker run -p 9090:8080 gcr.io/gcp-devops-338510/myfimage:v1.0
      docker ps -a
+     docker stop <containerid>
      docker rm <containerid>
      
