@@ -18,10 +18,22 @@ CREATE FIRST DOCKER IMAGES
 
 Node application
 Simple hellow world will be returned
-
 filename
 -server.js
 -Dockerfile
+Run app with node server.js
+-create docker image
+docker build -t myapp:v1.0 .
+Optimize Docker image
+
+push images
+-Docker hub
+-Conatiner registry
+-Artifact registry
+
+
+
+Demo
 
 var http = require('http');
 var handlerequest = function(request, response){
@@ -36,6 +48,14 @@ FROM node
 EXPOSE 8080
 COPY server.js
 CMD node server.js
+
+
+
+
+
+
+
+
 
 
 
