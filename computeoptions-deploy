@@ -1,0 +1,47 @@
+Deploy application on Google Cloud
+
+- Different deplyment method for GCP Compute
+(1) Where you want to deploy
+(2) What are the deployment strategies?
+
+Compute options
+
+Compute engine(IaaS)
+kUBERNETES -CONTAINERISED
+APP ENGINE-WEB APPLICATION SERVERLESS
+CLOUD RUN-CONTAINERISED
+CLOUD FUNCTION-EVEN DRIVEN
+
+-DEPLOYMENT METHODS
+* Blue/green Deployment
+* Rolling Deployment
+* Canary Deployment
+* Traffic splitting Deployment
+
+
+(1) Blue/green deployment
+- two systems/servers with same data and version
+-Developers came up with v2.0, but not deployed in blue but in green 
+-user get disconnected from blue to green server
+-user gets migrated from blue to green 
+-live(blue)  and staging(green)
+-blue (v3.0) and green(v2.0)... This was changes 
+
+(2) Rolling deployment
+- four diff resources with V1.0
+- One out of four first gets updated to v2.0
+- then other three gets updated with v2.0 gradually
+-finally 4 resources gets updated with v2.0
+
+
+(3) Canary Deployment
+- 8 differenet resource v1.0
+-small percentage say 3/8 will be updated with v2.0
+- every single container will be updated in next phase
+
+(4)TRAFFIC SPLITTING DEPLOYMENT
+- SMALL PERCENTAGE OF USER WILL BE SERVED NEW VERSION (20%)
+- If EVERYTHING IS FINE, REDIRECT ALL USER TO NEW VERSION
+-Traffic splitting can be used for A/B Testing
+
+
