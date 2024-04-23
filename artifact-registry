@@ -14,3 +14,225 @@ Lets see
 -How to configure via gcloud
 -Push image to AR
 
+
+   1  gcloud config set project snappy-benefit-421114
+    2  python3
+    3  nano main.py
+    4  ls
+    5  python3 main.py
+    6  main.py
+    7  cat main.py
+    8  cd main.py
+    9  nano main.py
+   10  ls
+   11  python main.py
+   12  history
+   13  gcloud config set project snappy-benefit-421114
+   14  ls
+   15  docker
+   16  docker version
+   17  clear
+   18  mkdir devops
+   19  cd devops/
+   20  mkdir docker-basics
+   21  cd ..
+   22  ls
+   23  cd main.py devops/docker-basics/
+   24  cd devops/docker-basics
+   25  ls
+   26  cd ..
+   27  cd .
+   28  cd ..
+   29  ls
+   30  cp main.py devops/docker-basics/
+   31  cd devops/docker-basics/
+   32  ls
+   33  cat main.py
+   34  clear
+   35  history
+   36  clear
+   37  python3
+   38  pip install flask
+   39  nano Dockerfile
+   40  ls
+   41  gcloud config set project snappy-benefit-421114
+   42  ls
+   43  cd devops
+   44  ls
+   45  cd deocker-basics
+   46  cd docker-basics
+   47  ls
+   48  cat main.py
+   49  nano Dockerfile
+   50  ls
+   51  docker images
+   52  docker pull hello-world
+   53  docker images
+   54  docker run hello-world
+   55  gcloud config set project snappy-benefit-421114
+   56  ls
+   57  cd devops
+   58  cd docker-basics
+   59  ls
+   60  docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+   61  nano Dockerfile
+   62  docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+   63  docker images
+   64  cd Dockerfile
+   65  ls
+   66  docker pull hello-world
+   67  docker run hello-world
+   68  docker images
+   69  docker run -p 9090:8080 gcr.io/gcp-devops-338510/myfimage:v1.0
+   70  docker ps -a
+   71  history
+   72  clear
+   73  docker images
+   74  docker push 200~gcr.io/gcp-devops-338510/myfimage
+   75  docker push gcr.io/gcp-devops-338510/myfimage
+   76  docker push gcr.io/gcp-devops-338510/myfimage:v1.0
+   77  sudo usermod -a -G docker ${soniasebastian}
+   78  sudo usermod -a -G docker soniasebastian
+   79  gcloud auth login
+   80  docker push gcr.io/gcp-devops-338510/myfimage:v1.0
+   81  clear
+   82  cd ..
+   83  mkdir gcloud
+   84  cd gcloud
+   85  ls
+   86  pwd
+   87  ls
+   88  pwd
+   89  ls
+   90  cd ..
+   91  ls
+   92  rm conatiner
+   93  rm container
+   94  help
+   95  ls
+   96  rm -r container
+   97  ls
+   98  cd gcloud
+   99  ls
+  100  cd Container
+  101  cd container
+  102  ls
+  103  cat server.js
+  104  cat dockerfile
+  105  clear
+  106  node server.js
+  107  cat server.js
+  108  node server.js
+  109  cd gcloud
+  110  ls
+  111  cd container
+  112  ls
+  113  node server.js
+  114  cat server.js
+  115  nano server.js
+  116  ls
+  117  node server.js
+  118  nano server.js
+  119  clear
+  120  ls
+  121  node server.js
+  122  nano server.js
+  123  node server.js
+  124  docker
+  125  docker images
+  126  docker build -t myapp:v1.0 .
+  127  docker images
+  128  docker rmi image bc372de65584
+  129  docker images
+  130  clear
+  131  nano dockerfile
+  132  docker build -t myapp:v1.0 .
+  133  docker images
+  134  clear
+  135  docker ps
+  136  docker run -d -p 8082:8080 myapp:v1.0
+  137  docker ps
+  138  docker stop 0c69184ab02e
+  139  docker ps
+  140  docker ps -a
+  141  docker rm 0c69184ab02e
+  142  docker ps -a
+  143  docker images
+  144  docker tag myapp:v1.0 gcr.io/$DEVSHELL_PROJECT_ID/myapp:v1.0
+  145  docker images
+  146  docker push gcr.io/snappy-benefit-421114/myapp:v1.0
+  147  gcloud auth login
+  148  gcloud projects get-iam-policy 200~snappy-benefit-421114
+  149  gcloud projects get-iam-policy snappy-benefit-421114
+  150  docker push gcr.io/snappy-benefit-421114/myapp:v1.0
+  151  clear
+  152  docker run --rm busybox date
+  153  gcloud auth configure-docker us-central1-docker.pkg.dev
+  154  docker push gcr.io/snappy-benefit-421114/myapp:v1.0
+  155  docker images
+  156  docker push gcr.io/snappy-benefit-421114/myapp:v1.0
+  157  clear
+  158  gcloud auth login
+  159  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1 (Iowa)-docker.pkg.dev
+  160  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1(Iowa)-docker.pkg.dev
+  161  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1-docker.pkg.dev
+  162  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1(Iowa) -docker.pkg.dev
+  163  gcloud auth print-access-token --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login -u oauth2accesstoken --password-stdin https://us-central1-iowa-docker.pkg.dev
+  164  clear
+  165  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /home/soniavenithdocker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /path/to/key.json
+  166  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev /home/soniavenithdocker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev 
+  167  /home/soniavenithdocker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /path/to/key.js
+  168  clear
+  169  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /Users/soniasebastian/Desktop/key.json
+  170  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /users/soniasebastian/Desktop/key.json
+  171  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1(Iowa) -docker.pkg.de
+  172  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev < /Users/soniasebastian/Desktop/key.json
+  173  docker login -u _json_key --password-stdin https://us-central1-iowa-docker.pkg.dev  /Users/soniasebastian/Desktop/key.json
+  174  docker login --help
+  175  gcloud auth print-access-token     --impersonate-service-account gcp-devops-demo@snappy-benefit-421114.iam.gserviceaccount.com | docker login     -u oauth2accesstoken     --password-stdin https://us-central1(Iowa) -docker.pkg.de
+  176  clear
+  177  cd gcloud/container
+  178  docker images
+  179  cd ..
+  180  docker images
+  181  cd Docker
+  182  cd ..
+  183  ls
+  184  cd devops
+  185  docker images
+  186  ls
+  187  cd docker-basics
+  188  ls
+  189  docker images
+  190  cd ..
+  191  cd gcloud
+  192  ls
+  193  cd container
+  194  ls
+  195  docker images
+  196  docker pull hello-world
+  197  docker run hello-world
+  198  docker images
+  199  docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+  200  docker images
+  201  cd gcloud/container
+  202  ls
+  203  docker images
+  204  clear
+  205  gcloud auth configure
+  206  gcloud auth configure-docker
+  207  gcloud auth configure-docker us-central1-docker.pkg.dev
+  208  cat ~/.docker/config.json
+  209  docker images
+  210  cd gcloud/container
+  211  ls
+  212  docker images
+  213  cat ~/.docker/config.json
+  214  docker images
+  215  docker pull hello-world
+  216  docker run hello-world
+  217  docker build -t gcr.io/gcp-devops-338510/myfimage:v1.0 .
+  218  docker images
+  219  docker tag hello-world:latest us-central1-docker.pkg.dev/snappy-benefit-421114/demorepo/hello-world:latest
+  220  docker images
+  221  docker push us-central1-docker.pkg.dev/snappy-benefit-421114/demorepo/hello-world:latest
