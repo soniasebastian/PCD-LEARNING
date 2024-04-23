@@ -1,0 +1,16 @@
+Artifact Registry
+
+Artifact registry comes with fine grained access CONTROL with Cloud IAM roles
+Multiple repository per project
+Regional & Multi-region repositories
+It can store not just Docker image but many more things like NPM, Maven and PYTHON
+asia-southeast1-docker.pkg.dev/[ProjectID]/[repo]/nginx:v1.0
+
+Create Repo(not required in Container Registry)
+Configure
+- gcloud auth configure-docker asia-southeast1-docker.pkg.dev
+
+Lets see
+-How to configure via gcloud
+-Push image to AR
+
