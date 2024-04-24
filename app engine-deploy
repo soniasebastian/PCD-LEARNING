@@ -48,3 +48,47 @@ You can stream logs from the command line by running:
 
 To view your application in the web browser run:
   $ gcloud app browse
+
+
+To change version inside default service
+nano main.py
+gcloud app deploy --no-promote --version 3
+Services to deploy:
+
+descriptor:                  [/home/soniavenith/devops/deploy-app/app-engine/app.yaml]
+source:                      [/home/soniavenith/devops/deploy-app/app-engine]
+target project:              [snappy-benefit-421114]
+target service:              [default]
+target version:              [3]
+target url:                  [https://3-dot-snappy-benefit-421114.uc.r.appspot.com]
+target service account:      [snappy-benefit-421114@appspot.gserviceaccount.com]
+
+
+     (add --promote if you also want to make this service available from
+     [https://snappy-benefit-421114.uc.r.appspot.com])
+
+Do you want to continue (Y/n)?  y
+
+Beginning deployment of service [default]...
+Uploading 2 files to Google Cloud Storage
+50%
+100%
+100%
+File upload done.
+Updating service [default]...done.                                                                                                                                                                                               
+Deployed service [default] to [https://3-dot-snappy-benefit-421114.uc.r.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s default
+
+To view your application in the web browser run:
+  $ gcloud app browse
+
+VERSION SPECIFIC URL IN VERSION 3
+
+
+-WE CAN SPLIT TRAFFIC
+* ip address, cookie, random
+-select random and give as 80/20 for splitting traffic
+
+
