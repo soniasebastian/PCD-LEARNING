@@ -1,0 +1,50 @@
+App engine oldest product
+-cloud function for one single [purpose based on event
+-Full fledged application to be deployed- APP ENGINE
+
+(1) Enable app engine in google cloud console
+(2) We can select resource (python/node/go/ruby..etc)
+(3) Select environ: Std/flexible
+(4) go to cloud shell within project create deploy-app/ app-engine folders
+-mkdir deploy-app
+-mkdir app-engine
+(5) create requirements.txt (dependencies stored)
+-nano requirements .txt
+*Flask==3.0.3
+-nano app.yaml
+*runtime: python310
+-gcloud app deploy
+
+
+DEMO
+
+Services to deploy:
+
+descriptor:                  [/home/soniavenith/devops/deploy-app/app-engine/app.yaml]
+source:                      [/home/soniavenith/devops/deploy-app/app-engine]
+target project:              [snappy-benefit-421114]
+target service:              [default]
+target version:              [20240424t142430]
+target url:                  [https://snappy-benefit-421114.uc.r.appspot.com]
+target service account:      [snappy-benefit-421114@appspot.gserviceaccount.com]
+
+
+Do you want to continue (Y/n)?  Y
+
+Beginning deployment of service [default]...
+Created .gcloudignore file. See `gcloud topic gcloudignore` for details.
+Uploading 3 files to Google Cloud Storage
+33%
+67%
+100%
+100%
+File upload done.
+Updating service [default]...done.                                                                                                                                                         
+Setting traffic split for service [default]...done.                                                                                                                                        
+Deployed service [default] to [https://snappy-benefit-421114.uc.r.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s default
+
+To view your application in the web browser run:
+  $ gcloud app browse
