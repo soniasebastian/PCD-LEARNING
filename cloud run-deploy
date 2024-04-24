@@ -1,0 +1,19 @@
+Deploy to Cloud Run
+
+-Recent offering by Google cloud
+-completely serverless
+-scale from zero to infinity
+-Deploy containerised application
+-Build own docker image with custom runtime
+-deploy one image created
+
+
+Google cloud console
+
+We have to select the image from artifact registry and follow basic steps for deployment
+
+fast deployment
+only from this version traffic served
+SETTING iam policy
+creating revion
+routing traffic
