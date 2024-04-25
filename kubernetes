@@ -1,0 +1,39 @@
+Deploy docker image on GKE
+-Google Kubernetes ENGINE
+-First create cluster
+-Second workload
+-Expose
+
+Enable API
+
+In Console you can create standard / autopilot cluster creation
+
+Use an existing cluster image
+creating a deployment
+waiting for Pods
+
+
+Expose a deployment
+port:9091
+Target port:8080
+
+Service type: Load balancing so with external IP we can access 
+
+
+Deployment details:
+
+Rolling update
+one resource at a time will be updated.
+update workload pod to a new application version
+
+Maximum surge: 25%
+max unavailable: 25%
+
+copy container images with diff version
+
+
+created new container
+After this earlier pods will get terminated
+And new pods will get created
+
+
