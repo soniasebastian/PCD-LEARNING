@@ -3,6 +3,9 @@ Deploy to Compute Engine
 General Purpose computing machine
 2 ways deployment
 
+
+
+
 -Containerised app
   * Container optimised OS
   * via other OS + manual Docker installation
@@ -17,10 +20,23 @@ docker ps
 we can see the container
 
 
-Next try for non-containerised vm
+-Next try for non-containerised vm
 create a vm instance 
 change version to ubuntu
 
 ssh into VM
 sudo apt update
 sudo apt install apache2
+cd /var/www/html
+sudo mv index.html index1.html
+sudo nano index.html
+<html><body><h1>Apache Homepage from GCE manual step</html></body></h1>
+
+Accessing external IP will yield it
+
+
+-NEXT TRY FOR START UP SCRIPT INSIDE MANAGEMENT (ADVANCED OPTION) 
+WHICH WILL AUTOMATE ABOVE STEPS
+-IT WILL DEPLOY THE APPLICATION USING COMPUTE ENGINE VM
+
+
