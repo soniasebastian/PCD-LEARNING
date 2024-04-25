@@ -10,3 +10,17 @@ General Purpose computing machine
 MANUAL INSTALLAPACHE
 VIS STARTUP SCRIPT
 
+use container image for deploying in a container mode
+SSH and try to access docker image
+docker version
+docker ps
+we can see the container
+
+
+Next try for non-containerised vm
+create a vm instance 
+change version to ubuntu
+
+ssh into VM
+sudo apt update
+sudo apt install apache2
