@@ -1,0 +1,15 @@
+Deploy to Instance Group
+
+
+1. Instance template
+-Blue print for all Virtual Machine
+
+* Create Instance from template
+* Instance group
+-managed
+-unmanaged
+
+
+MulTIPLE MACHINE /INSTANCE GROUPS
+
+THEN WE SHALL ADD LOAD BALANCE
