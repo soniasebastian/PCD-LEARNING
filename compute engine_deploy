@@ -1,0 +1,12 @@
+Deploy to Compute Engine
+- IAAS Infrastrcuture as a service
+General Purpose computing machine
+2 ways deployment
+
+-Containerised app
+  * Container optimised OS
+  * via other OS + manual Docker installation
+-Non-containerized app
+MANUAL INSTALLAPACHE
+VIS STARTUP SCRIPT
+
