@@ -13,3 +13,18 @@ Deploy to Instance Group
 MulTIPLE MACHINE /INSTANCE GROUPS
 
 THEN WE SHALL ADD LOAD BALANCE
+
+
+management automation
+
+#!/bin/bash
+apt update
+apt -y install apache2
+echo"<h3>Apache Home page from $(hostname) $(hostname -i) $(hostname -d) </h3>" > /var/www/html/index.html
+
+hostname
+hostname -i : ip adress
+hostname -d : ?
+
+Instance template are global resource
+when creating VM they will ask for location
