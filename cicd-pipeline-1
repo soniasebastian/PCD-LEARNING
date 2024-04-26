@@ -1,0 +1,20 @@
+CI/CD Pipeline -1
+
+  -Create Docker Image & Push to container Registry
+    
+  - source code (private git reposirty like in Github)
+. Dockerfile
+. Main.py
+
+  Cloud Build to Build
+. Images
+
+Push image to registry
+
+
+repo-1
+cicd-1
+image1
+
+
+    
