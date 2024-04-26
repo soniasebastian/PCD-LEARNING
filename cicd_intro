@@ -1,0 +1,72 @@
+Introduction to CI/CD Pipeline
+-Developer push codes to some Source code repository like Bitbucket, Github and build Server
+-Continuously build, code is good and working fine
+- something changes, again push code and Build server
+- pushing code continuosly to source code repository
+
+
+Continuous Deployment
+- Builds artifacts
+- Kinds of enviroment will fix the Deployment Server
+- We get continuous status on code working/performance
+
+
+Continuous deployment
+-Fully automated, no manual intervention
+-code is continuously build and deploy
+
+Continuous Delivery
+-Release to Production
+-May involve manual approval
+-it will make sure delivery are often and fast
+-before continuous delivery frequency of release usually one in 3 month
+-Now possible to relase in 5 times in day
+
+(2) Different services for CI/CD offered by Google cloud
+
+Source code maangement
+- Bitbucket
+-GitHub
+-Mercurial
+
+Google provided ------ Cloud source Repository
+build code using build tools
+
+BUILD
+-JAVA NODE APPS
+  -JAR FILE, VAR FILE
+
+  JENKINS
+  CIRCLECI
+  TEAMCITY
+
+  GOOGLE OFFERS cloud Build
+
+
+
+After build artifacts generated
+- dockerhub
+-artifact storage
+-jfrog artifactory
+-AmazonS3
+
+
+  google -Container Registry
+         -Artifact registry (store not only docker, but all files like JAR, VAR ETC) ADVANCED VERSION
+
+
+
+DEPLOYMENT
+-WHAT TO DEPLOY AND WHERE
+
+* COMPUTE ENGINE'*kubernetes
+*app engine
+*cloud run
+*cloud function
+
+
+open source management 
+
+
+
+
