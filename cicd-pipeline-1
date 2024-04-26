@@ -12,12 +12,14 @@ CI/CD Pipeline -1
 Push image to registry
 
 
-repo-1
-cicd-1
-image1
+STEPS TO BE DONE:
+
+repo-1  ---- cloud source repository
+cicd-1  ----  cloud build
+image1  ---- container/artifact registry
 
 
-COMMANDA
+COMMANDS FOR SOURCE CODE REPOSITORY
 
 
        gcloud init
@@ -77,3 +79,7 @@ COMMANDA
   377  git add main.py
   378  git commit -m "version 1.0"
   379  git push -u origin master
+
+
+
+COMMANDS FOR CLOUD BUILD
