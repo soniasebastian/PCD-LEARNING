@@ -17,4 +17,63 @@ cicd-1
 image1
 
 
-    
+COMMANDA
+
+
+       gcloud init
+  330  ls
+  331  cd devops
+  332  ls
+  333  mkdir cicd-pipeline
+  334  cd cicd-pipeline
+  335  gcloud source repos clone repo-1 --project=snappy-benefit-421114
+  336  ls
+  337  cd repo-1
+  338  ls
+  339  pwd
+  340  cd devops
+  341  ls
+  342  cd docker-basics
+  343  ls
+  344  cp Dockerfile /home/soniavenith/devops/cicd-pipeline/repo-1
+  345  cp main.py
+  346  cp main.py /home/soniavenith/devops/cicd-pipeline/repo-1
+  347  cd devops
+  348  cd cicd-pipeline/repo-1
+  349  ls
+  350  git
+  351  clear
+  352  git add Dockerfile
+  353  git add main.py
+  354  git status
+  355  git commit -m "first comment with Dockerfile code"
+  356  git status
+  357  git add Dockerfile
+  358  git add main.py
+  359  git commit -m "added first source code"
+  360  gcloud init
+  361  git status
+  362  git add Dockerfile
+  363  git add main.py
+  364  git commit -m "added first source code"
+  365  git add Dockerfile
+  366  git add main.py
+  367  git commit -m "added first source code"
+  368  GIT_AUTHOR_EMAIL="soniavenith@gmail.com" && GIT_AUTHOR_NAME="Sonia Venith" && git commit
+  369  git add Dockerfile
+  370  git add main.py
+  371  git commit -m "added first source code"
+
+         git config --global user.email "you@example.com"
+          git config --global user.name "Your Name" 
+
+
+
+  372  git status
+  373  git push -u origin master
+  374  clear
+  375  nano main.py
+  376  git status
+  377  git add main.py
+  378  git commit -m "version 1.0"
+  379  git push -u origin master
