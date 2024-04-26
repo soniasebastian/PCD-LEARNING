@@ -1,0 +1,68 @@
+Deploy python web app to Google App Engine
+
+(1) Source code
+. app.yaml
+  .main.py
+  . requirements.txt
+
+(2) Cloud Build
+(cloudbuild.yaml)- heart of cloud build file
+app engine: gcloud app deploy
+
+
+(3) Deploy to App engine
+
+
+
+commands
+
+CRETAE A REPO-2 UNDER CLOUD SOURCE REPOSITORIES
+  
+  395  cd devops
+  396  ls
+  397  cd deploy-app
+  398  ls
+  399  cd app-engine
+  400  ls
+  401  pwd
+  402  cp *.* /home/soniavenith/devops/cicd-pipeline/repo-2
+  403  ls
+
+
+
+  AFTER CREATION EXTARCT FILES FROM DEPLOY APP TO REPO-2 
+  395cd devops
+  396  ls
+  397  cd deploy-app
+  398  ls
+  399  cd app-engine
+  400  ls
+  401  pwd
+  402  cd devops
+  403  ls
+  404  cd cicd-pipeline
+  405  git clone ssh://soniavenith@gmail.com@source.developers.google.com:2022/p/snappy-benefit-421114/r/repo-2
+  406  gcloud source repos clone repo-2 --project=snappy-benefit-421114
+  407  cd repo-2
+  408  ls
+  409  pwd
+  410  ls
+  411  clear
+  412  cat requirements.txt
+  413  cat app.yaml
+  414  cat app main.py
+  415  nano main.py
+
+
+
+  
+  416  nano cloudbuild.yamlCLOUDBUILD.YAML
+  steps:
+- name: 'gct.io/hoogle.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
+options:
+  logging : CLOUD_LOGGING_ONLY
+timeout: 1600s
+
+
