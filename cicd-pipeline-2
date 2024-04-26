@@ -66,3 +66,34 @@ options:
 timeout: 1600s
 
 
+after creation of 4 files including cloudbuild.yaml
+Go  to cloud build for creating TRIGGER
+
+
+GOOGLE PROVIDED CLOUD BUILDER: BUILD CONFIGURATION FILE SCHEMA IN YAML/JSON FORMAT
+
+
+Whatever you want to do in cloudbuild like java/maven...kuberneted etc all is available in documentation
+
+
+A bild config file has following structure:
+
+-yaml.... timeout, logout, env, name,,,,args, dir, id , etc defined
+
+-We are going to deploy to Kubernetes....we have builders
+
+--In cloud builders, we have publicly build images
+
+steps: ubunto..echo helloworld
+
+
+Google Builders: bazel, docker,  git, gcloud, wget, javac, gsutil, dotnet, gradle 
+
+Community builders available
+Custom builders available
+
+
+
+
+
+
