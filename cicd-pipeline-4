@@ -1,0 +1,86 @@
+DEPLOY TO GOOGLE CLOUD RUN 
+
+we have to deploy docker images
+
+(1)Source code
+-app.py
+- Docker file
+-Requirements.txt
+
+(2) Cloud Build(cloudbuild.yaml)
+-Docker Build
+-Docker push
+-gcloud run deploy
+
+
+Deploy to Cloud Run
+
+1. main.py
+  from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return 'Welcome to Python Flask World v3.0 from cicd'
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+
+2. cloud build.yaml
+
+
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/snappy-benefit-421114/runimage', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/snappy-benefit-421114/runimage']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'runwithcicd', '--image', 'gcr.io/snappy-benefit-421114/runimage', '--region', 'us-central1', '--allow-unauthenticated']
+images:
+- gcr.io/snappy-benefit-421114/runimage
+
+2 cloud builds: DOCKER, CLOUDSDKTOOL
+
+
+
+  soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ nano cloudbuild.yaml
+soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ LS
+-bash: LS: command not found
+soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ ls
+cloudbuild.yaml  Dockerfile  main.py
+soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ git add *
+soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ git commit -m "first commit for cicd run demo"
+[master (root-commit) c46552d] first commit for cicd run demo
+ 3 files changed, 32 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 cloudbuild.yaml
+ create mode 100644 main.py
+soniavenith@cloudshell:~/devops/cicd-pipeline/repo-4 (snappy-benefit-421114)$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 827 bytes | 827.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Waiting for private key checker: 3/3 objects left
+To https://source.developers.google.com/p/snappy-benefit-421114/r/repo-4
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+  runwithcicd Region: us-central1 URL: https://runwithcicd-iz3xpunrda-uc.a.run.app  Min instances: 0   
+
+  3. Dockerfile
+  FROM python:3.7-slim
+RUN pip install flask
+WORKDIR /myapp
+COPY main.py /myapp/main.py
+CMD ["python", "/myapp/main.py"]
+  
