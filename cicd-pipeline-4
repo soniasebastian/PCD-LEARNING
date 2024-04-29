@@ -75,7 +75,7 @@ To https://source.developers.google.com/p/snappy-benefit-421114/r/repo-4
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
-  runwithcicd Region: us-central1 URL: https://runwithcicd-iz3xpunrda-uc.a.run.app  Min instances: 0   
+ 
 
   3. Dockerfile
   FROM python:3.7-slim
@@ -83,4 +83,12 @@ RUN pip install flask
 WORKDIR /myapp
 COPY main.py /myapp/main.py
 CMD ["python", "/myapp/main.py"]
+
+from GCP Console:
+
+
+ **** url : unwithcicd Region: us-central1 URL: https://runwithcicd-iz3xpunrda-uc.a.run.app  Min instances: 0   
+
+
+ **   runimage	—	1 minute ago	1 minute ago	
   
