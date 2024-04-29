@@ -12,3 +12,19 @@ Cloud Build
 
 
 Deploy to Cloud function
+
+
+**** I was not able to create cloud functions in Python and deploy web app using Clouf functions
+**** Was getting several errors while trying to access urls in 1st gen and 2nd gen functions
+**** Node was working perfectly fine for me
+**** Error
+-Bad Request
+
+The browser (or proxy) sent a request that this server could not understand.
+
+
+**** Error with 2nd gen function created from CLI
+
+-Error: Forbidden
+
+Your client does not have permission to get URL /python-http-function from this server.
