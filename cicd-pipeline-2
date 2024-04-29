@@ -94,6 +94,19 @@ Custom builders available
 
 
 
+After creating 4 files and pushing to repo 2
+
+(2) Next step is to navigate to Cloud build
+   -Create Trigger
+-Use repo2
+-Earlier we used docker file , here we used cloudbuild.yaml
+- Here in this cicd-2, we are creating service account specifically for cicd-2
+
+
+approval to checked....
+
+
+
 
 
 
