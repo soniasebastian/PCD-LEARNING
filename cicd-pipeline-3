@@ -1,1 +1,14 @@
+DEPLOY TO GOOGLE CLOUD FUNCTION
 
+
+Source code
+- main.py
+-requirements.txt
+- function-source.zip
+
+
+Cloud Build
+(cloudbuild.yaml)
+
+
+Deploy to Cloud function
