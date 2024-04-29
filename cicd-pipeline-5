@@ -1,0 +1,27 @@
+DEPLOY TO GOOGLE KUBERNETED ENGINE
+
+1. Source code
+-app.py
+  - Dockerfile
+
+2. Cloud Build (cloudbuild.yaml)
+- Git clone
+- Docker build
+- Docker Push
+- Kubectl set image
+
+
+3. Deploy to GKE
+
+
+cREATE gke cluster
+Deploy some sample Docker images
+Create load balancer based service
+create source code repos
+add python code, docker file, cloudbuild.yaml
+cloudbuild.yaml
+  - clone repo
+- build image
+- Push image
+- Update new image
+Create cloud Build trigger
