@@ -106,6 +106,13 @@ After creating 4 files and pushing to repo 2
 approval to checked....
 
 
+Many errors in build occured, check the logs to trouble shoot
+In IAM policy make sure to give the below roles
+App Engine Admin
+Cloud Build Service Account
+Logs Writer
+Service Account User
+
 
 
 
