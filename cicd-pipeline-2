@@ -115,6 +115,38 @@ Logs Writer
 Service Account User
 
 
+STEPS IN GITHUB
+
+Select an option to push code to your repository:
+
+Push code from a local Git repository
+
+Clone your repository to a local Git repository
+Select your preferred authentication method
+Install the Google Cloud SDK .
+Provide your authentication credentials:
+$
+gcloud init
+
+Clone this repository to a local Git repository:
+$
+gcloud source repos clone repo-1 --project=snappy-benefit-421114
+
+Note: This may display the following message that is safe to ignore:
+"Warning: remote HEAD refers to a nonexistent ref, unable to checkout."
+Switch to your new local Git repository:
+$
+cd repo-1
+
+After you've committed code to your local Git repository, push it to this repository:
+$
+git push -u origin master
+
+If you are using a version of Git with main as the default branch instead of master, after you've committed code to your local Git repository, push it to this repository using:
+$
+git push -u origin main
+
+Once you've completed all these steps, refresh your browser.
 
 
 
