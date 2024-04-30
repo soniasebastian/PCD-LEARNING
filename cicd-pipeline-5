@@ -25,3 +25,7 @@ cloudbuild.yaml
 - Push image
 - Update new image
 Create cloud Build trigger
+
+
+create cluster
+-gcloud container clusters create cicd-cluster --machine-type=g1-small --num-nodes=1 --zone=asia-southeast1-b
