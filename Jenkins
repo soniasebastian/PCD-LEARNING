@@ -1,0 +1,11 @@
+JENKINS
+- Popular Open source tool for CI/CD
+- Alternative to Cloud Build
+- Jenkins can be extended with Plugins
+   * Source code-git
+   * Unit testing-junit
+   * GCLOUD SDK
+
+-iNSTALLATION
+   * vm +manually install Jenkins
+   *marketplace solution(preferred)
