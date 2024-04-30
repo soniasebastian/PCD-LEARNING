@@ -1,0 +1,14 @@
+Terraform
+
+-Terraform is the one of the most popular tool for infrastructure provisioning
+-Free-open source
+-Devloped by Hashicorp
+-Quick & easy to get started with single binary file
+-Mater HCL-TERRAFORM in short span of time
+-Terraform has multiple provider are available
+-Apart from Public cloud , lot of different other provider are available for network, DNS, Firewall, database
+-Write configuration in HCL/JSON
+-HCL is preferred
+-Terraform is agentless tool
+-It is not configuration tool, Work well with Ansible
+- 
