@@ -1,0 +1,28 @@
+INFRASTRUCTURE AS A CODE
+
+
+Process of managing and provisioning cloud resources with some descriptive language
+Create Shell/Python script for creating VM
+But writing/maintaining such code is tedious task
+Need better language to create resource
+
+Create N/W
+Wait for above step to finish
+Provision subnet
+Create firewall rule
+Wait for above step to finish
+Compute engine instance with all parameters
+
+
+Hashicorp language HCL
+BETTER VERSION OF JSON/YAML
+
+Tool for IAC
+-cLOUD NATIVE TOOL AVAILABLE FOR INFRASTRUCTURE PROVISIONING
+-Azure template
+-Google-deployment manager
+AWS-Cloud formation
+JSON/YAML
+
+Terraform is cloud agnostic
+with multiple provider, resource can be provisioned for multiple cloud
