@@ -1,0 +1,17 @@
+Container Scanning
+
+Container Analysis provides
+- Automated vulnerability scanning
+- manual vulnerability scanning
+
+
+for containers in Artifact registry and Container Registry
+-works exactly same for both Registry
+
+
+
+Manual
+-gcloud artifacts docker images scan imageurl -remote
+
+  Automate
+-lets see in action
