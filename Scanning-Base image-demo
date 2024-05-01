@@ -16,3 +16,22 @@ Automate
 
 In this we are building and pushing an image, python 3.7 slim image we took from internet and are trying to watch out for vulnerabilities
 later on to fix that with google build ones so that we can rectify those vulnerabilities
+
+
+
+docker push gcr.io/snappy-benefit-421114/sec-image:v1.0 
+
+creates sec-imagev1.0 in gcp.io with many vulnerabilities
+
+
+Search for python in Google market place .....Google click to deploy containers
+
+https://marketplace.gcr.io/google/python
+
+
+we are replacing docker python image with latest google market place python image
+
+
+gcloud auth configure-docker && docker pull marketplace.gcr.io/google/python:latest
+
+the image from google is 375.1 MB than other image, but vulnerabilities : none
