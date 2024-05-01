@@ -1,0 +1,23 @@
+1. Secure Container Deployment
+-Google managed base images
+-Container analysis
+-Binary authorization
+
+
+Securing Base image
+Container technology build based on layers, base layer, layer 1, 2,3,4
+Python web app...linux + python combination 
+
+
+Base image
+layer 1:flask
+layer 2:app
+
+
+
+Base image is made of Ubuntu/debian based OS
+Choosing right base image is important
+
+So, how to pick right base image
+solution is : Google marketplace
+:Google mainatained these images & deploy for their own app deployment
