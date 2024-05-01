@@ -1,0 +1,45 @@
+BINARY AUTHORIZATION
+
+PRODUCT FOR DEPLOYMENT SECURITY CONTROL
+-PREVENT FROM DEPLOYMENT FROM VULNERABILITIES
+-SECURITY CONCERNS
+-COVER UP WITH BETTER DOCKER IMAGES
+-DEPLOYMENT LEVEL SECURITY
+
+
+
+BINARY AUTHORIZATION IS A DEPLOY TIME SECURITY CONTROL
+-CLOUD RUN
+-GKE
+
+iT ENSURES ONLY TRUSTED CONTAINER IMAGES ARE DEPLOYES ON GKE or Cloud Run
+
+Go to security
+Binary authorization
+enable API
+eDIT POLICY
+
+We are exploring for Clolud run ..
+create service
+sec-con-run
+
+go to advanced..security
+enable Binary authorization option
+
+allow all images
+create service in cloud run enabling binary authorization
+
+RESULT IN WEB BROWSER...
+
+
+
+It's running!
+Congratulations, you successfully deployed a container image to Cloud Run
+This created the revision sec-con-run-00001-cwq of the Cloud Run service sec-con-run in us-central1 in the GCP project snappy-benefit-421114.
+
+You can deploy any container to Cloud Run that listens for HTTP requests on the port defined by the PORT environment variable. Cloud Run will scale automatically based on requests and you never have to worry about infrastructure.
+
+What's next?
+Follow the Quickstart tutorial to build a “Hello World” application in your favorite language into a container image, and then deploy it to Cloud Run.
+
+BUILD AND DEPLOY QUICKSTART VIEW IN CLOUD CONSOLE
