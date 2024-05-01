@@ -1,0 +1,18 @@
+Demo
+
+gcloud artifacts docker images scan url of image --remote
+give yes
+enabling services
+scanning purpose
+On demand scaning manually
+
+
+
+Automate
+-turn on vulnerability scanning
+-new image upload will be scanned
+- On for Container and Artifact registry also
+
+
+In this we are building and pushing an image, python 3.7 slim image we took from internet and are trying to watch out for vulnerabilities
+later on to fix that with google build ones so that we can rectify those vulnerabilities
