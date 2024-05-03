@@ -43,3 +43,19 @@ What's next?
 Follow the Quickstart tutorial to build a “Hello World” application in your favorite language into a container image, and then deploy it to Cloud Run.
 
 BUILD AND DEPLOY QUICKSTART VIEW IN CLOUD CONSOLE
+
+
+rules
+allow
+disallow
+
+ Service update rejected by Binary Authorization policy: Revision 'sec-con-run-00002-vkz' is not ready and cannot serve traffic. 
+Container image 'gcr.io/snappy-benefit-421114/sec-image@sha256:3469d417f4a0a88500549e99c2875a6e4c645f2aaf25af3fc192cb9177eede18' is not authorized by policy. 
+'gcr.io/snappy-benefit-421114/sec-image@sha256:3469d417f4a0a88500549e99c2875a6e4c645f2aaf25af3fc192cb9177eede18' : Denied by an ALWAYS_DENY admission rule
+
+
+require attesation :next 
+
+physical person...atleast one attestor is required allow only images that have been verified..
+
+
