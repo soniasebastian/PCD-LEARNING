@@ -59,3 +59,65 @@ require attesation :next
 physical person...atleast one attestor is required allow only images that have been verified..
 
 
+first create key, softwarelevel, assymetric sign
+version 1 of key1 gets created
+
+
+fully qulaified resource identifor
+go to attestator
+cloud KMS
+PROVIDE URL
+
+PROVIDE IN PROPER FORMART IN CREATE ATTESTOR WITH KEY RING URL
+
+NEW PKIX KEY..PUBLIC KEY MATERIAL
+
+CYRPTOKEYVERSION1
+
+CREATE ASSTETOR
+
+
+so far created attestor only....
+
+
+...edit policy....
+addd attestors
+save policy......project defauly rule,,,allow only images that have been approved by attestor
+
+
+
+cloud run...if we add some image, it will give error....No attestion found that were valid and signed by a key trusted by a attestator
+
+
+IMPORTANT...WE HAVE TO SIGN AND ATTACH DOCKER IMAGE URL
+
+GO TO CONTAINER REGISTRY..
+FULLY QULAIFIED DOCKER IMAGE
+
+
+FIRE A GCLOUD COMMAND..SIGN DOCKER IMAGE WITH DEMO ATTESTATOR.......
+
+
+
+" gcloud beta container binauthz attestation sign-and-create --artifact-url="edit"  --attestor="demo-attestor" --attestor-project="edit"
+--keyversion-project="edit" --keyversion-location="goobal" --keyversion-keyring-"key-ring-1"  --keyversion="1"
+
+
+cloud run..deploy a revision to sec-con-run(us-central-1)
+
+
+creating revision
+routing traffic....completed
+
+
+successfully deploy docker images with BA , WE INTRODUCED DEMO ATTESTOR CONCEPT IN DEFAULT POLICY
+
+SAME WAY FOR KUBERNETES CLUSTERS ALSO
+
+
+
+
+
+
+
+
