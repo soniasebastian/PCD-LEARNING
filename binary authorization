@@ -41,8 +41,7 @@ You can deploy any container to Cloud Run that listens for HTTP requests on the 
 
 What's next?
 Follow the Quickstart tutorial to build a “Hello World” application in your favorite language into a container image, and then deploy it to Cloud Run.
-
-BUILD AND DEPLOY QUICKSTART VIEW IN CLOUD CONSOLE
+(II)  BUILD AND DEPLOY QUICKSTART VIEW IN CLOUD CONSOLE
 
 
 rules
@@ -113,6 +112,51 @@ routing traffic....completed
 successfully deploy docker images with BA , WE INTRODUCED DEMO ATTESTOR CONCEPT IN DEFAULT POLICY
 
 SAME WAY FOR KUBERNETES CLUSTERS ALSO
+
+
+(III) KUBERNETES CLUSTER 
+
+EXACTLY LIKE CLOUD RUN ONLY
+
+CLUSTER BASICS
+
+CREATE CLUSTER WITH GKE STANDARD
+BINARY AUTHORIZATION POLICY CREATED UNDER SECURITY REMAINS SAME
+
+CLUSTER 1
+ZONAL
+US-CENTRAL1-C
+DEFAULT POOL-1 NODE
+N1-STANDARD-1 
+10GB BOOT DISK
+
+2VCPU, 2GIGS RAM
+
+CLUSTER LEVEL SECURITY
+
+SECURITY..enable BINARY AUTHORIZATION
+
+CREATE CLUSTER,,,VERSION 1 NOT ATTESTED
+
+CHECK WHETHER BINARY AUTHORISATION IS ENABLED, ONLY VERIFIED IMAGES WILL BE DEPLOYED
+
+
+....
+
+Go to worload and deploy version 1.0
+
+app name: my-app-1: image denied request
+
+No attestations found valid and signed by a key trusted by attestor
+
+
+......
+
+next try with version 2...
+name:my-app-2
+deploy version 2 image
+
+Binary authorisation works same for cloud run and GKE
 
 
 
