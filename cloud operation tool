@@ -1,1 +1,67 @@
+(i) CLOUD MONITORING SERVICE ;introduction
+
+.....operation tools...DEVELOPER TOOLS WHILE DEVELOPING APPS also
+
+
+1. Operation like Monitoring, Logging
+2. why logging-monitoring is required
+3. WHAT IS LOGGING
+4. KINDS OF LOG-AUDIT LOIGS
+5. LOG COLLECTION
+6. LOG ROUTING'
+7. LOG EXPORT
+8. CLOUD MONITORING-METRICS, DASHBOARD, UPTIME CHECK, ALERTS
+9. CLOUD DEBUGGER, GTRACE, PROFILER, ERROR REPORTING
+
+
+(ii) why operation tool required
+
+1. software development + maintenance
+2. everyone want their doftware run smoothly
+3. but no software is bug free
+4. issues comes at dev stage, test or prod level
+5. How to find root cause behind it
+6. you need to continuoulsy monitor resources
+    a. space is sufficient (lot of temp storage, traffic surges..hard disk have space, app is slow or not , traffic high etc etc..CPU usage going above threshold, )
+    b. is application slow
+    c. Is CPU usage going beyond 90%
+    d. who did what with Prod (even if by mistake)
+
+7. so to know all those answers & many more such tool is required
+
+
+(iii) Cloud Monitoring exploration
+1. Monitor various cloud resources
+2. different metrics can be measured
+3. monitor one or more GCP Project or AWS Account
+4. workspace
+   .MULTIPLE METRICS CAN BE ADDED
+  . DEFAULT WORKSPACE & CUSTOME WORKSPACE
+DEMO
+
+
+NAVIGATION TO GUI
+
+- OPERATION
+MONITORING
+DEBBUGER
+PROFILER
+LOGGING
+TRACE
+ERROR REPORTING
+
+
+(iv) OPS AGENT/LEGACY AGENT on VM Instances
+
+earlier it was legacy agent
+now its google ops agent
+
+All installation methods...
+using google cloud cli
+using automation tools like ansible, chef, puppet, terraform 
+using CLI or google cloud console to install the agent on individual VMs
+
+
+
+
 
