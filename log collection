@@ -1,0 +1,10 @@
+Log Collection
+-Log read/write via gcloud SDK
+-Automatically
+   -cloud run, GKE, App Engine
+-Logging Agent
+   -for Compute engine on Google cloud/AWS VM
+   -LEGACY AGENT/OPS AGENT
+- Cloud Logging API
+  -Python/Java SDK
+  -From On-premises
