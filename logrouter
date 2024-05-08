@@ -1,0 +1,15 @@
+Log Router
+
+
+-Log arrives at Log router from various sources
+-from router, diverted to various sink
+- Two types of Log Bucket
+_Required
+_Default
+
+
+-Logs can be routed to user defined bucket
+-Sinks
+Bigquery
+cloudstorage
+Pubsub
