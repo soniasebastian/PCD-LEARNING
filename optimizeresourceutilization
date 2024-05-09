@@ -1,0 +1,62 @@
+Optimize resource utilization
+- Resource cost, utilization levels, Biling
+-Pre-emptible VMs
+-Committed use discounts (cud) , sustained use discounts(sud)
+TCO (total cost of operations) considerations
+
+
+Preemptible VM
+-Just like other vm
+- Short lived cheaper vm
+-Provision pre-embitible VM When
+   -workload is fault tolerant
+   -not require 100% high availability
+   -cost is critical
+   -upto 80% discount
+   -max life 24 hours
+   -not always available
+   -google gives 30s warning before autoshutdown
+   - Regular VM has higher priority than pre-embtible VM
+   -TERMINATED SOONER DUE TO SYSTEM DEMANDS
+
+
+   Flat rate,
+   committed use discounts [CUD]
+   sustained use discount
+
+
+   Flat rate
+   -pay for what you use
+   -no special discount
+   -in compute engine:
+   E2 and A2 category of machine
+
+   Sustained use discount
+   -Sustained use discounts are automatic discounts for running specific compute engine resources a significant portion of the billing month
+   -Applies to N1, N2 machine types
+   -Not applicable to other machine type
+   -if you use at least 25% of month
+   -only on GKE & VM instances
+
+
+   Committed use discount
+   -Lets say your workload is predictable
+   -you can commit for 1 year or 3 year
+   -get upto 70% of discount
+   - only on GKE & VM Instances
+
+
+   Total cost of Operations(TCO)
+   TCO = Purchase cost of asset + cost of operation
+   when moving to cloud from on premises
+   -cost need to consider
+   -In GCP no purchse of asset
+   Provision resources with no minimum commitment(expect few service feature)
+   -cost include (pay as you go model)
+   -Operation cost
+   
+   
+   
+
+
+   
